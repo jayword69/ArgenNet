@@ -1,0 +1,9 @@
+/* service-build.css, service-repair.css, service-upgrade.css */
+.container{
+    text-align: center;
+}
+.container ul, .container ol{
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}

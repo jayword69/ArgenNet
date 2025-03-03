@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArgenNet - Tus Soluciones Informáticas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="logo.png" alt="Logo de ArgenNet" class="logo-img">
+                <img src="logoletter.png" alt="Texto ArgenNet" class="logo-letter">
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="marketplace.html">Mercado</a>
+                <a href="#services">Servicios</a>
+                <a href="#testimonials">Testimonios</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+            <div class="nav-buttons">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+                <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                <button class="account-btn"><i class="fas fa-user"></i></button>
+                <button id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="background-image: linear-gradient(rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.7)), url('hero.png');">
+        <div class="container">
+            <h2>Tu Tienda Integral de Componentes y Servicios Informáticos</h2>
+            <p>Descubre una amplia gama de componentes informáticos de alta calidad, reparaciones de hardware expertas y construcciones de PC personalizadas adaptadas a tus necesidades.</p>
+            <div class="cta-buttons">
+                <a href="marketplace.html" class="btn btn-primary">Explorar Mercado</a>
+                <a href="#services" class="btn btn-secondary">Nuestros Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container categories-section">
+        <div class="categories-content">
+            <h2 class="section-title categories-title">Categorías</h2>
+            <div class="categories">
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/categories/processors.jpg" alt="Procesadores">
+                    </div>
+                    <div class="category-content">
+                        <h3>Procesadores</h3>
+                        <p>CPUs de alto rendimiento para juegos y productividad.</p>
+                        <a href="marketplace.html?category=processors">Ver Todos</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/categories/ram.jpg" alt="Memoria RAM">
+                    </div>
+                    <div class="category-content">
+                        <h3>Memoria (RAM)</h3>
+                        <p>Módulos de memoria rápidos y fiables.</p>
+                        <a href="marketplace.html?category=ram">Ver Todos</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/categories/storage.jpg" alt="Almacenamiento">
+                    </div>
+                    <div class="category-content">
+                        <h3>Almacenamiento</h3>
+                        <p>SSDs y HDDs para todas tus necesidades de almacenamiento.</p>
+                        <a href="marketplace.html?category=storage">Ver Todos</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="images/categories/monitors.jpg" alt="Monitores">
+                    </div>
+                    <div class="category-content">
+                        <h3>Monitores</h3>
+                        <p>Monitores de alta calidad para todas tus necesidades.</p>
+                        <a href="marketplace.html?category=monitors">Ver Todos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container featured-products">
+        <h2 class="section-title">Productos Destacados</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img"><img src="images/placeholder-product1.jpg" alt="Producto 1"></div>
+                <div class="product-content">
+                    <h3 class="product-title">Producto 1</h3>
+                    <p class="product-price">$199.99</p>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="images/placeholder-product2.jpg" alt="Producto 2"></div>
+                <div class="product-content">
+                    <h3 class="product-title">Producto 2</h3>
+                    <p class="product-price">$249.99</p>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Añadir al Carrito</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><img src="images/placeholder-product3.jpg" alt="Producto 3"></div>
+                <div class="product-content">
+                    <h3 class="product-title">Producto 3</h3>
+                    <p class="product-price">$299.99</p>
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container services" id="services">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <div class="service-img"><img src="images/placeholder-repair.jpg" alt="Reparación de Hardware"></div>
+                <div class="service-content">
+                    <i class="fas fa-tools service-icon"></i>
+                    <h3>Reparación de Hardware <i class="fas fa-wrench"></i></h3>
+                    <p>Servicios de reparación expertos para todos tus problemas de hardware informático.</p>
+                    <a href="service-repair.html" class="btn btn-primary">Aprender Más</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img"><img src="images/placeholder-build.jpg" alt="Construcciones Personalizadas"></div>
+                <div class="service-content">
+                    <i class="fas fa-laptop-code service-icon"></i>
+                    <h3>Construcciones Personalizadas <i class="fas fa-cogs"></i></h3>
+                    <p>Construcciones de PC personalizadas para satisfacer tus necesidades y preferencias específicas.</p>
+                    <a href="service-build.html" class="btn btn-primary">Aprender Más</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img"><img src="images/placeholder-upgrade.jpg" alt="Actualizaciones"></div>
+                <div class="service-content">
+                    <i class="fas fa-arrow-up service-icon"></i>
+                    <h3>Actualizaciones <i class="fas fa-rocket"></i></h3>
+                    <p>Actualiza tu sistema existente con los últimos componentes.</p>
+                    <a href="service-upgrade.html" class="btn btn-primary">Aprender Más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que Dicen Nuestros Clientes</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "ArgenNet proporcionó un excelente servicio y reparó rápidamente mi portátil. ¡Muy recomendado!"
+                    </div>
+                    <div class="testimonial-author">
+                        <i class="fas fa-user-circle"></i> Juan Pérez
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">"Construí un PC personalizado y está funcionando perfectamente. ¡Excelente relación calidad-precio!"
+                    </div>
+                    <div class="testimonial-author">
+                        <i class="fas fa-user-circle"></i> Juana Gómez
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="section-title">Suscríbete a Nuestro Boletín</h2>
+            <p>Mantente actualizado con los últimos productos, servicios y ofertas exclusivas.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Ingresa tu correo electrónico">
+                <button type="submit"><i class="fas fa-envelope"></i> Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3><i class="fas fa-info-circle"></i> Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Equipo</a></li>
+                    <li><a href="#">Carreras</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3><i class="fas fa-link"></i> Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="marketplace.html">Mercado</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3><i class="fas fa-headset"></i> Soporte</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Envíos y Devoluciones</a></li>
+                    <li><a href="#">Contactar Soporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3><i class="fas fa-map-marker-alt"></i> Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</li>
+                    <li><i class="fas fa-phone"></i> +1 123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> info@argennet.com</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 ArgenNet. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

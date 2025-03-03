@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArgenNet - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="service-checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <i class="fas fa-laptop-code logo-icon"></i>
+                <h1>ArgenNet</h1>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html">Marketplace</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#testimonials">Testimonials</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <div class="nav-buttons">
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <button class="cart-btn"><i class="fas fa-shopping-cart"></i></button>
+                <button class="account-btn"><i class="fas fa-user"></i></button>
+                <button id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">Checkout</h2>
+        <form id="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+        </div>
+        <div class="copyright">
+            &copy; 2024 ArgenNet. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

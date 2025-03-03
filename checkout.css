@@ -1,0 +1,18 @@
+/* checkout.css */
+#checkout-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#checkout-form label{
+    margin-top: 10px;
+}
+
+#checkout-form input, #checkout-form textarea{
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+}

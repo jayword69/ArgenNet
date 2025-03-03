@@ -1,0 +1,17 @@
+/* cart.css */
+
+.cart-item {
+    border: 1px solid var(--grey);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+#cart-total {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+#cart-items{
+    text-align: center;
+}
